@@ -14,32 +14,6 @@ use function PHPUnit\Framework\fileExists;
 
 class BookSeeder extends Seeder
 {
-    public array $books = [
-        [
-            'title' => '100 Years of Solitude',
-            'author' => 'Gabriel Garcia Marquez',
-            'squares' => [
-                [ 'position' => 25, 'hard_mode' => true ]
-            ]
-        ],
-        [
-            'title' => '11/22/63',
-            'author' => 'Stephen King',
-            'squares' => [
-                [ 'position' => 4, 'hard_mode' => true ],
-                [ 'position' => 21, 'hard_mode' => true ]
-            ]
-        ],
-        [
-            'title' => 'A Brother\'s Price',
-            'author' => 'Wen Spencer',
-            'squares' => [
-                [ 'position' => 6, 'hard_mode' => true ],
-                [ 'position' => 21, 'hard_mode' => true ],
-                [ 'position' => 25, 'hard_mode' => false ]
-            ]
-        ]
-    ];
 
     /**
      * Run the database seeds.
