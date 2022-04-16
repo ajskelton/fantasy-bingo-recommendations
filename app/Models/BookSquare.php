@@ -9,5 +9,5 @@ class BookSquare extends Model
 {
     use HasFactory;
 
-    protected $table = 'books_squares';
+    protected $table = 'book_square';
 }
