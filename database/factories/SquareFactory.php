@@ -17,7 +17,8 @@ class SquareFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->realText(30),
+            'position' => $this->faker->numberBetween([0, 24]),
         ];
     }
 }
