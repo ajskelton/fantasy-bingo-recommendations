@@ -11,11 +11,12 @@ class SquareController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        return view('app', [
+            'squares' => Square::get()
+        ]);
     }
 
     /**
@@ -42,18 +43,20 @@ class SquareController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Square  $square
-     * @return \Illuminate\Http\Response
+     * @param Square $square
      */
     public function show(Square $square)
     {
-        //
+        return view('square.show', [
+            'square' => $square
+        ]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Square  $square
+     * @param Square $square
+     *
      * @return \Illuminate\Http\Response
      */
     public function edit(Square $square)
@@ -64,8 +67,9 @@ class SquareController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateSquareRequest  $request
-     * @param  \App\Models\Square  $square
+     * @param  \App\Http\Requests\UpdateSquareRequest $request
+     * @param Square                                  $square
+     *
      * @return \Illuminate\Http\Response
      */
     public function update(UpdateSquareRequest $request, Square $square)
@@ -76,7 +80,8 @@ class SquareController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Square  $square
+     * @param Square  $square
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(Square $square)
