@@ -11,6 +11,9 @@ module.exports = {
         extend: {
             colors: {
                 'slate': '#c2c0ba',
+                'yellow-light': '#fedb74',
+                'yellow-dark': '#f8b947',
+                'green-light': '#eae9bd',
             }
         },
     },

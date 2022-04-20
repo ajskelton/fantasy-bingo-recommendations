@@ -521,6 +521,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-16 {
   height: 4rem;
 }
+.h-64 {
+  height: 16rem;
+}
+.h-32 {
+  height: 8rem;
+}
+.h-48 {
+  height: 12rem;
+}
+.h-full {
+  height: 100%;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -533,20 +545,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-auto {
   width: auto;
 }
+.w-full {
+  width: 100%;
+}
 .max-w-xl {
   max-width: 36rem;
 }
 .max-w-6xl {
   max-width: 72rem;
 }
+.max-w-2xl {
+  max-width: 42rem;
+}
+.max-w-3xl {
+  max-width: 48rem;
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .items-center {
   align-items: center;
 }
 .justify-center {
   justify-content: center;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -556,25 +586,55 @@ Ensure the default browser behavior of the `hidden` attribute.
 .overflow-hidden {
   overflow: hidden;
 }
+.break-normal {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.break-words {
+  overflow-wrap: break-word;
+}
+.break-all {
+  word-break: break-all;
+}
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.rounded {
+  border-radius: 0.25rem;
+}
 .border-t {
   border-top-width: 1px;
+}
+.bg-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(61 107 75 / var(--tw-bg-opacity));
 }
 .bg-slate {
   --tw-bg-opacity: 1;
   background-color: rgb(194 192 186 / var(--tw-bg-opacity));
 }
-.bg-green {
+.bg-yellow-light {
   --tw-bg-opacity: 1;
-  background-color: rgb(61 107 75 / var(--tw-bg-opacity));
+  background-color: rgb(254 219 116 / var(--tw-bg-opacity));
+}
+.bg-green-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 233 189 / var(--tw-bg-opacity));
 }
 .p-6 {
   padding: 1.5rem;
 }
 .p-4 {
   padding: 1rem;
+}
+.p-12 {
+  padding: 3rem;
+}
+.p-8 {
+  padding: 2rem;
+}
+.p-1 {
+  padding: 0.25rem;
 }
 .px-3 {
   padding-left: 0.75rem;
@@ -613,6 +673,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .font-semibold {
   font-weight: 600;
@@ -682,8 +754,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 @media (min-width: 768px) {
 
+  .md\:h-48 {
+    height: 12rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:break-normal {
+    overflow-wrap: normal;
+    word-break: normal;
   }
 
   .md\:border-t-0 {
@@ -693,11 +774,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:border-l {
     border-left-width: 1px;
   }
+
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 @media (min-width: 1024px) {
 
   .lg\:inline-flex {
     display: inline-flex;
+  }
+
+  .lg\:h-48 {
+    height: 12rem;
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -712,9 +806,23 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .lg\:break-normal {
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .lg\:p-4 {
+    padding: 1rem;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 

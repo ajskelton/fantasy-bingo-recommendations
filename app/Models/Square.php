@@ -9,6 +9,8 @@ class Square extends Model
 {
     use HasFactory;
 
+    protected $with = ['books'];
+
     public function books(): \Illuminate\Database\Eloquent\Relations\BelongsToMany {
         return $this->belongsToMany(Book::class);
     }

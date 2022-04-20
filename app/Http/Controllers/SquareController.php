@@ -14,8 +14,10 @@ class SquareController extends Controller
      */
     public function index()
     {
+        $squares = Square::all();
+
         return view('app', [
-            'squares' => Square::get()
+            'squares' => $squares,
         ]);
     }
 
