@@ -8,10 +8,7 @@
 
 <body class="bg-slate">
 
-    <header class="container mx-auto p-4">
-        <img src="{{ asset('images/2020-fantasy-bingo-banner.png') }}"
-             alt="A Banner with the text r/fantasy presents 2022 bingo card" class="mx-auto">
-    </header>
+    <x-header />
 
     <section class="container mx-auto px-6 py-8">
         {{ $slot }}

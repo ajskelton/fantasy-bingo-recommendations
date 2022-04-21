@@ -10,7 +10,9 @@ class Book extends Model
 {
     use HasFactory;
 
-    public function authors(): Relation\BelongsTo {
+    protected $with = [ 'author' ];
+
+    public function author(): Relation\BelongsTo {
         return $this->belongsTo(Author::class);
     }
 

@@ -43,11 +43,12 @@ class AuthorController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Author  $author
-     * @return \Illuminate\Http\Response
      */
     public function show(Author $author)
     {
-        //
+        return view('author.show', [
+            'author' => $author
+        ]);
     }
 
     /**

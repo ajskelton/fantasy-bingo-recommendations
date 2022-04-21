@@ -17,6 +17,7 @@ return new class extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('position');
+            $table->longText('description');
             $table->timestamps();
         });
     }
