@@ -18,13 +18,9 @@
             @foreach ( $square->books as $book )
                 <tr class="border-2 border-green
                     <?php echo $loop->odd ? 'bg-gray-200' : 'bg-gray-300' ?>">
-                    <td class="py-1 px-4">{{ $book->title }}</td>
-                    <td class="py-1 px-4"><a href="/author/{{ $book->author->id }}">{{ $book->author->name }}</a></td>
-                    <td class="py-1 px-4 flex justify-center">
-                        @if ( $book->pivot->hard_mode )
-                            <x-check />
-                        @endif
-                    </td>
+                    <td class="py-1 px-4"><x-book-title :book="$book" /></td>
+                    <td class="py-1 px-4"><x-author-name :book="$book" /></td>
+                    <td class="py-1 px-4 flex justify-center"><x-hard-mode :pivot="$book->pivot" /></td>
                 </tr>
             @endforeach
         </tbody>

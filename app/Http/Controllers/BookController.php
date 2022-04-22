@@ -43,11 +43,12 @@ class BookController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Book  $book
-     * @return \Illuminate\Http\Response
      */
     public function show(Book $book)
     {
-        //
+        return view('book.show', [
+            'book' => $book
+        ]);
     }
 
     /**
