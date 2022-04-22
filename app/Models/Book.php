@@ -18,6 +18,6 @@ class Book extends Model
 
     public function squares(): Relation\BelongsToMany
     {
-        return $this->belongsToMany(Square::class);
+        return $this->belongsToMany(Square::class)->withPivot('hard_mode');
     }
 }
