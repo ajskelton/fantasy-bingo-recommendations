@@ -22,7 +22,7 @@ class BookSeeder extends Seeder
      */
     public function run()
     {
-        $file = storage_path( "app/public/seeders/books.csv");
+        $file = base_path() . '/database/seeders/seeds/books.csv';
 
         $records = $this->import_csv( $file );
 
