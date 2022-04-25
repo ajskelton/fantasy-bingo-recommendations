@@ -26,6 +26,10 @@ class BookSeeder extends Seeder
 
         $records = $this->import_csv( $file );
 
+        if ( !$records ) {
+            return;
+        }
+
         foreach ( $records as $book ) {
 
             $author = Author::firstOrCreate([
