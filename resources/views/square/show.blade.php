@@ -1,10 +1,13 @@
 <?php $odd = $square->position % 2 !== 0 ?>
 <x-layout>
-    <div class="mb-8">
-        <h2 class="text-4xl mb-4">{{$square->name}}</h2>
+    <div class="c-heading mb-8">
+        <x-page-title :title="$square->name" />
+        <x-page-subtitle subtitle="Bingo Square [{{$square->position}}]" />
+        <div class="w-full lg:w-3/4">
         <x-markdown>
             {{$square->description}}
         </x-markdown>
+        </div>
     </div>
     <table class="text-left table-fixed w-full font-normal border-green">
         <thead>

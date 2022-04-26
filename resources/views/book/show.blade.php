@@ -1,6 +1,7 @@
 <x-layout>
     <div class="mb-8">
-        <h2 class="text-4xl mb-4">{{$book->title}}</h2>
+        <x-page-title :title="$book->title" />
+        <x-page-subtitle subtitle="Book" />
     </div>
     <table class="text-left table-fixed w-full font-normal border-green">
         <thead>
