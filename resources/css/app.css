@@ -5,4 +5,8 @@
     @apply text-green font-bold underline;
 }
 
+img {
+    @apply max-w-full;
+}
+
 @tailwind utilities;
