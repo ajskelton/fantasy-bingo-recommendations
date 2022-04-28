@@ -21,3 +21,4 @@ Route::get('/', [ SquareController::class, 'index'])->name('app');
 Route::get('/square/{square:id}', [SquareController::class, 'show']);
 Route::get('/author/{author:id}', [AuthorController::class, 'show']);
 Route::get('/book/{book:id}', [BookController::class, 'show']);
+Route::get('/book/', [BookController::class, 'index']);
