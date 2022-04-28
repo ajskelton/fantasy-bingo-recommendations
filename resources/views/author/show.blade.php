@@ -1,3 +1,4 @@
+@section('title') {{ $author->name }} @endsection
 <x-layout>
     <div class="mb-8">
         <x-page-title :title="$author->name" />

@@ -1,3 +1,4 @@
+@section('title') {{ 'All Recommended Books' }} @endsection
 <x-layout>
     <div class="mb-8">
         <x-page-title title="All Books" class="mb-5"/>
