@@ -1,4 +1,5 @@
 <?php $odd = $square->position % 2 !== 0 ?>
+@section('title') {{ $square->name }} @endsection
 <x-layout>
     <div class="c-heading mb-8">
         <x-page-title :title="$square->name" />
