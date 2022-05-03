@@ -1,8 +1,18 @@
 @tailwind base;
 @tailwind components;
 
+.nav ul {
+    @apply flex w-full justify-between mt-2 md:mt-0;
+}
+.nav ul li:not(:last-child) {
+    @apply md:mr-5;
+}
+
 .c-heading a {
     @apply text-green font-bold underline;
+}
+.c-heading p {
+    @apply mb-5;
 }
 
 img {

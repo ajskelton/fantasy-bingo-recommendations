@@ -11,11 +11,15 @@ class AuthorController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        $authors = Author::all();
+        $sorted_authors = $authors->sortBy('name');
+
+        return view('author.all', [
+            'authors' => $sorted_authors
+        ]);
     }
 
     /**
