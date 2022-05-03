@@ -4,7 +4,7 @@
         <x-page-title :title="$author->name" />
         <x-page-subtitle subtitle="Author" />
     </div>
-    <table class="text-left table-fixed w-full font-normal border-green">
+    <table class="text-left w-full font-normal border-green">
         <thead>
             <tr class="bg-yellow-light border-2 border-green">
                 <th class="w-7/12 py-2 px-4">Title</th>
